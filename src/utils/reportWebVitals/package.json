@@ -1,0 +1,6 @@
+{
+  "name": "report-web-vitals",
+  "version": "0.0.0",
+  "private": true,
+  "main": "reportWebVitals.js"
+}
