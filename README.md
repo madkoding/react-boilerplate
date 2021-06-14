@@ -1,4 +1,4 @@
-# React with preconfigured craco alias, eslint standard javascript, jest and husky
+# React with preconfigured craco alias, eslint standard javascript, jest and husky, and a lazy load example
 
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/madkoding/react-boilerplate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/madkoding/react-boilerplate/alerts/) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/madkoding/react-boilerplate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/madkoding/react-boilerplate/context:javascript)
 
