@@ -1,5 +1,7 @@
 # React with preconfigured craco alias, eslint standard javascript, jest and husky
 
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/madkoding/react-boilerplate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/madkoding/react-boilerplate/alerts/) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/madkoding/react-boilerplate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/madkoding/react-boilerplate/context:javascript)
+
 ## About this project
 
 This helps to have an "out-of-the-box" preconfigured project. Each module could be imported as `@component/...` and every module inside the base folder (`/src`)
