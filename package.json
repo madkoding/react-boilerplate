@@ -1,39 +1,65 @@
 {
   "name": "react-boilerplate",
-  "description": "React boilerplate with eslint standard, craco path aliases, husky and jest preconfigured",
-  "version": "1.0.0",
+  "description": "React boilerplate with Vite, TypeScript, ESLint Standard, Jest/Vitest, and Husky",
+  "version": "2.0.0",
+  "type": "module",
   "keywords": [
-    "cra",
     "react",
-    "craco",
+    "vite",
+    "typescript",
     "eslint",
     "jest",
+    "vitest",
     "husky",
-    "alias",
-    "es6",
-    "Boilerplate"
+    "boilerplate"
   ],
   "dependencies": {
-    "@craco/craco": "^6.1.2",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "dotenv": "^10.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.0",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.3.0",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.56.0",
+    "@typescript-eslint/parser": "^8.56.0",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.24",
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jest": "^28.14.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "husky": "^9.1.6",
+    "jsdom": "^28.1.0",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.8.1",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.3",
+    "web-vitals": "^4.2.3"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "craco eject"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint . --ext .ts,.tsx --fix",
+    "prepare": "husky"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
     ]
   },
   "browserslist": {
@@ -47,16 +73,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "eslint": "^7.28.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jest": "^24.3.6",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-react": "^7.24.0",
-    "husky": "^6.0.0",
-    "lint-staged": "^11.0.0"
   }
 }

@@ -1,6 +1,7 @@
 {
   "name": "report-web-vitals",
-  "version": "0.0.0",
   "private": true,
-  "main": "reportWebVitals.js"
+  "version": "0.0.0",
+  "type": "module",
+  "main": "reportWebVitals.ts"
 }

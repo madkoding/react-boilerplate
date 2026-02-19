@@ -1,79 +1,118 @@
-# React with preconfigured craco alias, eslint standard javascript, jest and husky, and a lazy load example
+# React Boilerplate
 
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/madkoding/react-boilerplate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/madkoding/react-boilerplate/alerts/) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/madkoding/react-boilerplate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/madkoding/react-boilerplate/context:javascript)
+Modern React boilerplate with **Vite**, **TypeScript**, **Vitest**, **ESLint**, and **Husky**.
 
-## About this project
+## Features
 
-This helps to have an "out-of-the-box" preconfigured project. Each module could be imported as `@component/...` and every module inside the base folder (`/src`)
+- ⚡ **Vite** - Next generation frontend tooling
+- ⚛️ **React 18** - Latest React with hooks and Concurrent Mode
+- 📘 **TypeScript** - Type-safe development
+- 🧪 **Vitest** - Fast unit testing with DOM support
+- 🔍 **ESLint** - Code quality with Standard style
+- 🧹 **Husky** - Git hooks for linting and testing
+- 🎨 **Path aliases** - cleaner imports (`@components`, `@views`, etc.)
 
-You can only import modules or style sheets, everything else should be in the public folder
+## Tech Stack
 
-## Available Scripts
+- **Build Tool**: Vite 5.4
+- **Framework**: React 18.3
+- **Language**: TypeScript 5.6
+- **Testing**: Vitest 2.1 with @testing-library/react
+- **Linting**: ESLint with Standard + TypeScript
+- **Styling**: CSS Modules / Scoped CSS
 
-In the project directory, you can run:
+## Getting Started
 
-### `yarn start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Node.js 18+
+- npm or yarn
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Installation
 
-### `yarn test`
+```bash
+# Clone the repository
+git clone <repository-url>
+cd react-boilerplate
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Install dependencies
+npm install
 
-### `yarn build`
+# Start development server
+npm run dev
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Available Scripts
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Command                 | Description                           |
+| ----------------------- | ------------------------------------- |
+| `npm run dev`           | Start development server on port 3000 |
+| `npm run build`         | Build for production                  |
+| `npm run preview`       | Preview production build              |
+| `npm test`              | Run tests in watch mode               |
+| `npm run test:coverage` | Run tests with coverage               |
+| `npm run test:ui`       | Run tests with Vitest UI              |
+| `npm run lint`          | Run ESLint with auto-fix              |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## File Structure
 
-### `yarn eject`
+```
+src/
+├── assets/          # Static assets (images, fonts, styles)
+├── components/      # Reusable UI components
+├── hooks/           # Custom React hooks
+├── services/        # API services and business logic
+├── utils/           # Utility functions
+├── views/           # Page-level components
+└── index.tsx        # Application entry point
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Path Aliases
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Configure your IDE to resolve these imports:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- `@components/*` → `src/components/*`
+- `@assets/*` → `src/assets/*`
+- `@hooks/*` → `src/hooks/*`
+- `@services/*` → `src/services/*`
+- `@utils/*` → `src/utils/*`
+- `@views/*` → `src/views/*`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Testing
 
-## Learn More
+Tests use Vitest with DOM testing library:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+# Run all tests
+npm test
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Run with coverage
+npm run test:coverage
 
-### Code Splitting
+# Run specific test file
+npx vitest path/to/test.tsx
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Linting
 
-### Analyzing the Bundle Size
+The project uses ESLint with Standard JavaScript style plus TypeScript support:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+# Check and fix linting issues
+npm run lint
+```
 
-### Making a Progressive Web App
+## Pre-commit Hooks
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Husky is configured to run linting and tests on every commit via `lint-staged`.
 
-### Advanced Configuration
+## Configuration Files
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- `vite.config.ts` - Vite configuration with path aliases
+- `tsconfig.json` - TypeScript configuration
+- `.eslintrc.cjs` - ESLint configuration
+- `.prettierrc` - Prettier configuration
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-<!-- AUTO-UPDATE-DATE -->
-**Última actualización:** 2026-02-18 22:36:00 -03
+MIT

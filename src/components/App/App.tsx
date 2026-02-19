@@ -1,17 +1,14 @@
-import logo from './logo.svg'
-import './App.css'
-
 function App () {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src="/logo192.png" className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/component/App/App.js</code> and save to reload.
+          Edit <code>src/components/App/App.tsx</code> and save to reload.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://react.dev"
           target="_blank"
           rel="noopener noreferrer"
         >
