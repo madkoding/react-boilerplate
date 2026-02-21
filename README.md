@@ -118,4 +118,4 @@ Husky is configured to run linting and tests on every commit via `lint-staged`.
 MIT
 
 <!-- AUTO-UPDATE-DATE -->
-**Última actualización:** 2026-02-21 19:05:42 -03
+**Última actualización:** 2026-02-21 20:06:42 -03
